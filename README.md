@@ -1,7 +1,7 @@
 # EXP-3-B-Automatic-street-light-systems-using-LDR-sensor
-Name: Mathan Kailash S
-Reg No: 212223060156
-Slot: 4X4-5
+### Name: Mathan Kailash S
+### Reg No: 212223060156
+### Slot: 4X4-5
 
 ## Aim: 
 To measure the LDR Sensor using Photoresistor with Arduino UNO Board/ESP-32 using Tinker CAD.
