@@ -1,6 +1,10 @@
 # EXP-3-B-Automatic-street-light-systems-using-LDR-sensor
+Name: Mathan Kailash S
+Reg No: 212223060156
+Slot: 4X4-5
 
 ## Aim: 
+To measure the LDR Sensor using Photoresistor with Arduino UNO Board/ESP-32 using Tinker CAD.
 
 ## Hardware / Software Tools required:
 
@@ -11,6 +15,8 @@
 	Photoresistor
   
 ## Circuit Diagram:
+
+![WhatsApp Image 2025-10-28 at 16 07 26_a7b89178](https://github.com/user-attachments/assets/e492cbfb-7982-4267-8441-87711d6147bb)
 
 
 ## Theory :
@@ -65,11 +71,42 @@ o	The middle point (between LDR and resistor) connects to the Arduino analog inp
 •	Save the Circuit: Click "Save" to keep your circuit design and code for future use.
 
 ## Code:
+```
 
+const int LEDPin=13;
+const int LDRPin=A0;
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(LEDPin,OUTPUT);
+  pinMode(LDRPin,INPUT);
+}
+void loop()
+{
+  int LDRStatus=analogRead(LDRPin);
+  if(LDRStatus<=500)
+  {
+    digitalWrite(LEDPin,HIGH);
+    Serial.print("Current Light Intensity Value is -");
+    Serial.println(LDRStatus);
+  }
+  else
+  {
+    digitalWrite(LEDPin, LOW);
+    Serial.print("Current Light Intensity Value is -");
+    Serial.println(LDRStatus);
+  }
+}
+```
 
 
 ## Output:
+![WhatsApp Image 2025-10-28 at 16 08 50_66a2f3ed](https://github.com/user-attachments/assets/a58e8ecd-c79d-4535-a25e-fb601276eed4)
+
+
  
 
 
 ## Result:
+
+ Thus measure the LDR Sensor using Photoresistor with Arduino UNO Board/ESP-32 using Tinker CAD has been Verified Successfully.
